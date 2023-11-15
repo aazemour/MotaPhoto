@@ -1,0 +1,78 @@
+/*
+Theme Name: MotaPhoto
+Theme URI: https://www.motaphoto.com
+Author: Anne-Angelique Zemour
+Author URI: https://aazemour.fr
+Description: Thème pour une photographe professionnelle
+Version: 1.0
+Tags: motaphoto, photographe
+Text Domain: motaphoto
+*/
+/* Fonts */
+
+body {
+  font-family: "Space Mono", sans-serif;
+}
+
+/* En-tête */
+
+header {
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  height: 80px;
+}
+
+.header div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 216px;
+  height: 14px;
+  position: absolute;
+  left: 146px;
+}
+
+.menu ul {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+}
+
+.menu li {
+  list-style: none;
+}
+
+.menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+}
+
+/* Footer */
+
+.menu-pied-de-page-container ul {
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 86px;
+}
+
+.menu-pied-de-page-container li {
+  list-style: none;
+}
+
+.menu-pied-de-page-container a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  font-size: 16px;
+}
