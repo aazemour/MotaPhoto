@@ -18,12 +18,21 @@ body {
 
 header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   background: #fff;
-  height: 80px;
+  height: 1042px;
 }
 
-.header div {
+.logo-nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 14px 10px rgba(0, 0, 0, 0.03);
+}
+
+.logo-nav div {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -31,16 +40,26 @@ header {
   align-items: center;
 }
 
-.logo {
+.logo img {
   width: 216px;
   height: 14px;
   position: absolute;
   left: 146px;
 }
 
+.menu {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  gap: 45px;
+}
+
 .menu ul {
   display: flex;
   flex-direction: row;
+  width: 100%;
+  justify-content: center;
   gap: 45px;
 }
 
@@ -53,6 +72,18 @@ header {
   text-transform: uppercase;
   color: black;
   font-size: 16px;
+}
+
+.image-titre {
+  position: absolute;
+  width: 100%;
+}
+
+.titre-site {
+  position: relative;
+  left: 220px;
+  top: 402px;
+  z-index: 1;
 }
 
 /* Footer */
