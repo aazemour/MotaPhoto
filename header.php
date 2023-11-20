@@ -28,10 +28,8 @@
                 ?>
             </div>
         </div>
-        <div>
-            <img class="image-titre" src="wp-content/themes/MotaPhoto/assets/images/nathalie-11.jpeg"
-                alt="Photo d'un événement"></img>
-            <img class="titre-site" src="wp-content/themes/MotaPhoto/assets/images/PHOTOGRAPHE EVENT.png"
-                alt="Photographe event"></img>
+        <div class="hero">
+            <img class="image-titre" src="wp-content/themes/MotaPhoto/assets/images/nathalie-11.jpeg"></img>
+            <img class="titre-site" src="wp-content/themes/MotaPhoto/assets/images/PHOTOGRAPHE_EVENT.png"></img>
         </div>
     </header>

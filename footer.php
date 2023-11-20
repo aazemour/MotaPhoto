@@ -1,4 +1,8 @@
 <?php
+// Inclure le fichier de la modale de contact
+include get_template_directory() . '/parts/modale_contact.php';
+?>
+<?php
 if (has_nav_menu('footer-menu')): ?>
     <?php
     wp_nav_menu(
