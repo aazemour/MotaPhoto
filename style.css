@@ -10,22 +10,29 @@ Text Domain: motaphoto
 */
 /* Fonts */
 
+html,
+body {
+  min-height: 100%;
+}
+
 body {
   font-family: "Space Mono", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100%;
   margin: 0px;
-  overflow: hidden;
+}
+
+.contain {
+  object-fit: contain;
 }
 
 /* En-tête */
 
 header {
   background: #fff;
-  height: 1042px;
+  width: 1447px;
   margin: 0px;
 }
 
@@ -76,12 +83,14 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 962px;
 }
 
 .image-titre {
   position: relative;
   width: 1440px;
   height: 962px;
+  object-fit: cover;
 }
 
 .titre-site {
@@ -110,6 +119,12 @@ header {
   text-transform: uppercase;
   color: black;
   font-size: 16px;
+}
+
+hr {
+  size: 1px;
+  width: 1148px;
+  margin: 0px;
 }
 
 /* Modale */
@@ -180,4 +195,225 @@ header {
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+/* single page photos */
+
+.post-photos {
+  display: flex;
+  width: 1148px;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+h2 {
+  font-style: italic;
+  font-size: 66px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 58px;
+  width: 420px;
+  margin: 0px;
+}
+
+.description p {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.description-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.photo-description {
+  display: flex;
+  flex-direction: row;
+  width: 1148px;
+  height: 844px;
+  gap: 20px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  width: 564px;
+  height: 844px;
+  justify-content: flex-end;
+  gap: 20px;
+}
+
+.description hr {
+  size: 1px;
+  width: 564px;
+  margin: 0px;
+}
+
+.photo img {
+  width: 564px;
+  height: 844px;
+  box-sizing: border-box;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  width: 1148px;
+  height: 118px;
+  gap: 20px;
+}
+
+.bouton-contact {
+  display: flex;
+  flex-direction: row;
+  width: 564px;
+  align-items: center;
+}
+
+.bouton-contact p {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  margin-right: 96px;
+  width: 198px;
+}
+
+.bouton-contact button {
+  font-family: Space Mono;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.carroussel {
+  display: flex;
+  width: 564px;
+}
+
+.bouton-contact button {
+  width: 272px;
+  height: 50px;
+  border-radius: 2px;
+  background: #d8d8d8;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
+  border: none;
+}
+
+.description-photo hr {
+  size: 1px;
+  width: 1148px;
+  margin: 0px;
+}
+
+/* Carrousel */
+
+.carrousel-container {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  margin-left: 42%;
+  margin-top: 0.7%;
+  gap: 10px;
+}
+
+.carrousel img {
+  width: 81px;
+  height: 71px;
+  object-fit: cover;
+}
+
+.arrow {
+  display: flex;
+  gap: 30px;
+}
+
+.hide-image {
+  display: none;
+}
+
+.prev-image .next-image {
+  display: block;
+}
+
+/* Photos apparentées */
+
+.autres-photos {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+}
+
+.autres-photos p {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 1.8px;
+  text-transform: uppercase;
+  margin-top: 77px;
+}
+
+.same-photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.same-photos img {
+  width: 564px;
+  height: 495px;
+  object-fit: cover;
+}
+
+.photos-button {
+  display: flex;
+  justify-content: center;
+}
+
+.autres-photos button {
+  width: 272px;
+  height: 50px;
+  border-radius: 2px;
+  background: #d8d8d8;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.02);
+  border: none;
+  margin-bottom: 64px;
+}
+
+.photos-button a {
+  text-decoration: none;
+  color: black;
+  font-family: Space Mono;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* filtres */
+
+#filters-form {
+  display: flex;
+}
+
+.postform {
+  width: 224px;
+  height: 20px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1.3px solid var(--blues-gray-2, #b8bbc2);
+  background: var(--White, #fff);
+}
+
+/* Style pour le bouton de soumission du formulaire */
+.filter-submit {
+  margin-top: 10px;
 }

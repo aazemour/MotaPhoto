@@ -2,6 +2,7 @@
 // Inclure le fichier de la modale de contact
 include get_template_directory() . '/parts/modale_contact.php';
 ?>
+<hr />
 <?php
 if (has_nav_menu('footer-menu')): ?>
     <?php
